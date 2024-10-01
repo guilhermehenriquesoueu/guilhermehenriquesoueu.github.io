@@ -1,1 +1,0 @@
-# guilhermehenriquesoueu.github.io
