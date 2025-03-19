@@ -1,1 +1,142 @@
-Supp!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guilherme Henrique | Back-end Developer and DevOps Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    .main {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden; /* evita que o ::before ultrapasse os limites */
+    }
+
+    .main::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("assets/background.jpg");
+      background-size: cover;
+      background-position: center;
+      opacity: 0.4;
+      z-index: 0;
+    }
+
+    .main .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+
+    .intro-name-container, .specs-container {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .specs-container {
+      margin-bottom: 20px;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .image-container img {
+      width: 150px;
+    }
+
+    .icons-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .icons {
+      width: 50px;
+      height: 50px;
+    }
+
+    .me-2 {
+      margin-right: 10px;
+    }
+
+    .introduction {
+      font-family: "Fira Code", monospace;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 25px;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    .name {
+      font-family: "Fira Code", monospace;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 35px;
+      line-height: 40px;
+      text-align: center;
+    }
+
+    .specs {
+      font-family: "Fira Code", monospace;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 25px;
+      line-height: 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="content">
+      <div class="image-container">
+        <img src="./assets/profile.png" alt="">
+      </div>
+      <div class="intro-name-container">
+        <span class="introduction">Sup! I'am</span>
+        <span class="name">Guilherme Henrique</span>
+      </div>
+      <div class="specs-container">
+        <span class="specs">Back-end Developer and</span>
+        <span class="specs">DevOps Engineer</span>
+      </div>
+      <div class="icons-container">
+        <a href="https://github.com/guilhermehenriquesoueu" target="_blank">
+          <img src="./assets/github-icon.jpg" alt="Repositório do GitHub" class="icons me-2">
+        </a>
+        <a href="https://www.linkedin.com/in/guilhermehenriquesoueu"  target="_blank">
+          <img src="./assets/linkedin-icon.jpg" alt="Perfil LinkedIn" class="icons me-2">
+        </a>
+        <a href="https://medium.com/@guilhermehenriquesoueu" target="_blank">
+          <img src="./assets/medium-icon.jpg" alt="Artigos no Medium" class="icons me-2">
+        </a>
+        <a href="https://www.instagram.com/guilhermehenriquesoueu/" target="_blank">
+          <img src="./assets/instagram-icon.jpg" alt="Perfil Instagram" class="icons">
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
